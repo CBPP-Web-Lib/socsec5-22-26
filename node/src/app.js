@@ -13,7 +13,7 @@ const url_base = document.querySelector(script_sel).src.replace(/js\/app(\.min)*
 import data from "../data.json";
 
 const width = 940;
-const left_margin = 250;
+const left_margin = 210;
 const right_margin = 100;
 const box_height = 50;
 const box_gap = 16;

@@ -30,7 +30,7 @@ const defs = [
     rows: [12, 29, 30]
   },
   {
-    name: "Intellectual and developmental",
+    name: "Intellectual and\n developmental",
     rows: [16, 17, 18, 19]
   },
   {
