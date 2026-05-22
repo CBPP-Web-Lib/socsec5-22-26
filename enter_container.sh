@@ -1,1 +1,1 @@
-docker exec -it -w /opt/project/app $PROJECTID-watch /bin/bash
+docker exec -it -w /opt/project/app socsec5-22-26-watch /bin/bash

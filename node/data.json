@@ -1,0 +1,97 @@
+[
+ {
+  "name": [
+   "Muscoloskeletal"
+  ],
+  "data": {
+   "Total": 2465911,
+   "Under 30": 3366,
+   "30–39": 32451,
+   "40–49": 172812,
+   "50–59": 807522,
+   "60–FRA": 1449760
+  }
+ },
+ {
+  "name": [
+   "Mental health"
+  ],
+  "data": {
+   "Total": 1514635,
+   "Under 30": 32437,
+   "30–39": 135597,
+   "40–49": 321900,
+   "50–59": 519099,
+   "60–FRA": 504602
+  },
+  "bottom_margin": 50
+ },
+ {
+  "name": [
+   "Circulatory system; blood",
+   "and blood-forming organs"
+  ],
+  "data": {
+   "Total": 765665,
+   "Under 30": 3827,
+   "30–39": 18736,
+   "40–49": 61943,
+   "50–59": 242927,
+   "60–FRA": 438232
+  }
+ },
+ {
+  "name": [
+   "Nervous system, skin and",
+   "sense organs"
+  ],
+  "data": {
+   "Total": 761102,
+   "Under 30": 12838,
+   "30–39": 54840,
+   "40–49": 130667,
+   "50–59": 260152,
+   "60–FRA": 302605
+  }
+ },
+ {
+  "name": [
+   "Endocrine; respiratory,",
+   "genitourinary; digestive"
+  ],
+  "data": {
+   "Total": 433120,
+   "Under 30": 5558,
+   "30–39": 27445,
+   "40–49": 68290,
+   "50–59": 153115,
+   "60–FRA": 178712
+  }
+ },
+ {
+  "name": [
+   "Intellectual and developmental"
+  ],
+  "data": {
+   "Total": 328276,
+   "Under 30": 32408,
+   "30–39": 65081,
+   "40–49": 79665,
+   "50–59": 86294,
+   "60–FRA": 64828
+  }
+ },
+ {
+  "name": [
+   "Other conditions"
+  ],
+  "data": {
+   "Total": 857918,
+   "Under 30": 13145,
+   "30–39": 52857,
+   "40–49": 119170,
+   "50–59": 282287,
+   "60–FRA": 390459
+  }
+ }
+]

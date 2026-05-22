@@ -1,19 +1,22 @@
 {
-  "name": "$PROJECTID",
+  "name": "socsec5-22-26",
   "version": "0.0.1",
   "description": "Brief description of package",
   "scripts": {},
   "author": "Nick Kasprak",
   "license": "MIT",
   "dependencies": {
-    "cbpp_figure": "git+https://git@github.com/CBPP-Web-Lib/CBPP_Figure"
+    "cbpp_figure": "git+https://git@github.com/CBPP-Web-Lib/CBPP_Figure",
+    "comma-number": "^2.1.0",
+    "d3": "^7.9.0",
+    "papaparse": "^5.5.3"
   },
   "devDependencies": {
     "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.11.0",
-    "core-js": "^3.6.5",
     "axios": "^0.26.0",
     "babel-loader": "^8.1.0",
+    "core-js": "^3.6.5",
     "css-loader": "^4.2.1",
     "d3-color": "^1.4.1",
     "dart-sass": "^1.25.0",
