@@ -89,7 +89,7 @@ new Promise((resolve, reject) => {
     .attr("x1", left_margin - 10)
     .attr("y1", top_margin - gridline_overflow)
     .attr("x2", left_margin - 10)
-    .attr("y2", height - bottom_margin + gridline_overflow)
+    .attr("y2", height - bottom_margin + gridline_overflow - box_gap)
     .attr("stroke", "#000")
     .attr("stroke-width", 2)
 
@@ -120,7 +120,7 @@ new Promise((resolve, reject) => {
           .attr("x1", x_pos)
           .attr("x2", x_pos)
           .attr("y1", top_margin - gridline_overflow)
-          .attr("y2", height - bottom_margin + gridline_overflow)
+          .attr("y2", height - bottom_margin + gridline_overflow - box_gap)
           .attr("stroke-width", 1)
           .attr("stroke","#aaa")
         d3.select(this)
@@ -128,9 +128,11 @@ new Promise((resolve, reject) => {
           .text(age_widths_gridline_text[d]+"")
           .attr("x", x_pos)
           .attr("text-anchor","middle")
-          .attr("y", height - bottom_margin + gridline_overflow+15)
+          .attr("y", height - bottom_margin + gridline_overflow+5)
       }
     })
+
+  svg.selectAll("rect.spacer").raise();
 })
 
 
@@ -206,12 +208,14 @@ function make_item_group(g, data, last) {
     .attr("dx", 30)
 
   if (data.bottom_margin) {
-    g.append("rect")
+    var offset = g.attr("transform").replace("translate(","").replace(")","").split(",");
+    d3.select(g.node().parentNode.parentNode).append("rect")
+      .attr("class","spacer")
       .attr("fill", "#fff")
       .attr("width", width)
-      .attr("height", data.bottom_margin - 2*gridline_overflow)
+      .attr("height", data.bottom_margin - gridline_overflow)
       .attr("x", 0)
-      .attr("y", box_height + gridline_overflow)
+      .attr("y", box_height + gridline_overflow*2 + offset[1]*1 + top_margin)
   } else if (!last) {
     g.append("line")
       .attr("y1", box_height + box_gap/2)
